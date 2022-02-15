@@ -1,11 +1,11 @@
 module.exports = {
-    chainId: 40002,
-    rpcUrl: "https://rpc.testnet.fantom.network/",
-    wftmAddress: "0xf1903E0264FaC93Be0163c142DB647B93b3ce0d4",
-    daiAddress: "0x3A5b6631aD2Bd2b82fd3C5c4007937F14fa809b9",
-    begoAddress: "0x1d584F912C56F872c457d4D57FAa63A81bF94319",
-    factoryAddress: "0xb2c9d73f632e6e99c3b21ac8e96a71c2d0d33039",
-    stakingAddress: "0xf81E9D702Feae184a8b300604c544CF4610c343e",
-    treasuryAddress: "0x25565F3102bDF574e11068680D4828D9696c19E8",
+    chainId: 80001,
+    rpcUrl: "https://speedy-nodes-nyc.moralis.io/89b4f5c6d2fc13792dcaf416/polygon/mumbai",
+    wftmAddress: "0x9c3c9283d3e44854697cd22d3faa240cfb032889",
+    daiAddress: "0xef45e6E3159e9F302D2B85f6E777791d7B7e98d8",
+    begoAddress: "0x6fBEe246b7348F02A04348f160583d3799525001",
+    factoryAddress: "0x58767006e1586e1682aeC6E2078B1b3F15Bb836A",
+    stakingAddress: "0x08B03ac83F2da266594AcC6d02D744fBC92351FB",
+    treasuryAddress: "0xc8268553695245aB61d2D6AF31c6FEd13fe1D965",
     zeroAddress: "0x0000000000000000000000000000000000000000"
 }

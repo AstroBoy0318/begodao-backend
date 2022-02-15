@@ -833,12 +833,16 @@ const daiContract = new web3.eth.Contract(erc20Abi, web3Config.daiAddress);
 const web3Util = function() {};
 
 async function getFTMPrice() {
-    const ftmPrice = (await (await fetch('https://api.binance.com/api/v3/avgPrice?symbol=FTMUSDT', { method: 'GET' })).json()).price;
-    return ftmPrice;
+    try {
+        const ftmPrice = (await (await fetch('https://api.binance.com/api/v3/avgPrice?symbol=FTMUSDT', { method: 'GET' })).json()).price;
+        return ftmPrice;
+    } catch (ex) {
+        return 0;
+    }
 }
 
 web3Util.getTokenPrice = async function(token) {
-    const ftmPrice = await getFTMPrice;
+    const ftmPrice = await getFTMPrice();
     if (token === web3Config.daiAddress) return 1;
     if (token === web3Config.wftmAddress) return Number(ftmPrice);
     const tokenContract = new web3.eth.Contract(erc20Abi, token);
